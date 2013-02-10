@@ -1,4 +1,0 @@
-brianchapman.github.com
-=======================
-
-Blog
