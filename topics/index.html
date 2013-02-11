@@ -1,0 +1,20 @@
+---
+layout: page
+title: "Topics"
+description: ""
+---
+{% include JB/setup %}
+
+
+{% for tag in site.tags %} 
+{% cycle '<div class="row-fluid marketing">', '' %}
+  <div class="span6">
+    <h4 id="{{ tag[0] }}-ref">{{ tag[0] }}</h4>
+    <p></p>
+    <ul>
+      {% assign pages_list = tag[1] %}  
+      {% include JB/pages_list %}
+    </ul>
+  </div>
+{% cycle '', '</div>' %}
+{% endfor %}
