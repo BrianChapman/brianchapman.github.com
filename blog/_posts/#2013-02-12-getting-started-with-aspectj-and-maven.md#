@@ -2,13 +2,14 @@
 layout: post
 title: "Getting Started with AspectJ, Eclipse, and Maven"
 description: ""
-category: [tutorial]
+category: [coding]
 tags: [aspectj, java]
 published: true
 ---
 {% include JB/setup %}
 
-AspectJ is the de-facto library for using aspect oriented programming (AOP) in Java. I had a difficult time finding a good introduction to AspectJ, including setting it up with Maven and Eclipse, thus the reason for this post. 
+AspectJ is the de-facto library for using aspect oriented programming (AOP) in Java. I had a difficult time finding a goo
+d introduction to AspectJ, including setting it up with Maven and Eclipse, thus the reason for this post. 
 
 Maven
 -----
