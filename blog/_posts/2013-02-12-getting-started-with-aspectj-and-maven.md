@@ -97,9 +97,6 @@ Since m2e version 1.0, plugins that are bound to the maven lifecycle must either
 
 I recommend reviewing [this video](http://eclipse.org/ajdt/demos/HelloWorldAspectJ.html) on the features of AJDT.
 
-From my experience, the Eclipse integration does not appear to automatically recognize and apply advice for aspects written using Java 5 Annotations. For that functionality it is necessary to create a traditional \*.aj file and use the 'aspect' keyword. You can see this for yourself by looking at the 'annotation' and 'traditional' projects in my [sandbox](https://github.com/BrianChapman/sandbox/tree/master/aspectj).
-
-
 Writing your first Aspect
 -------------------------
 
@@ -199,7 +196,7 @@ This statement is an 'after advice' which will be injected after the code in the
 	
 This type of after advice is called 'after returning advice' and will be executed after the code in the pointcut executes just like before, but this time the returning value is supplied. This is denoted with the 'returning(Money balance)' keyword. The return value's type and variable name is supplied here.
 
-You can also define pointcuts and advice using Java 5 Annotations. There are some advantages to doing this over the traditional approach as the resulting class is a valid java class and can be used and unit tested like a java class. One downside is readability and Eclipse integration. As far as I can tell, Eclipse will not incrementally compile these classes (If anyone knows how to enable this, please chime in!) and other helpful integrations are not available.
+You can also define pointcuts and advice using Java 5 Annotations. There are some advantages to doing this over the traditional approach as the resulting class is a valid java class and can be used and unit tested like a java class. 
 
     @Aspect
     public class TransactionsAspect {
